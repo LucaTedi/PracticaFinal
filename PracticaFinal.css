@@ -1,0 +1,33 @@
+#title {
+
+    background-image: url('https://lh3.googleusercontent.com/proxy/oF9IZPspLhc3O8LPsUgjxSayThav7nB7gj8GZZ_I_XewEvhe9-D7K7q250IJ5tLI0xn3JI2feoIMe2i5mWV3=s0-d') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*De no haber puesto el no-repeat, la imagen saldría dos veces.*/
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+nav {
+    font-family: Helvetica;
+    font-size: x-large;
+    background-color: yellow;
+    padding: 5px;
+}
+
+
+footer {
+    background-color: gainsboro;
+    font-size: large;
+    text-align: center;
+    padding: 25px;
+    
+}
+canvas {
+    background: #eee;
+    display: block;
+    margin: 0 auto;
+}
