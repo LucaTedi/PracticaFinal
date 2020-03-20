@@ -80,9 +80,7 @@
                     ctx.lineTo(y_axis["xf"], y_axis["yf"]);
                     ctx.stroke();
                     ctx.closePath();
-                }
-
-                //Aquí es donde empiezan los inconvenientes (que más abajo detallo)
+              
                 if (varX2 < 0); {
                     for (x = -windowWidth; x <= windowWidth; x = x + 0.01) {
                         var y = Math.pow(x, 2);
@@ -102,10 +100,9 @@
                     }
                 }
 
-                //Pintar los puntos para pintar los valores
+
                 function drawfx(x, y) {
 
-                    //Aquí es donde aplico la escala
                     x = x * scale;
                     y = y * scale;
 
