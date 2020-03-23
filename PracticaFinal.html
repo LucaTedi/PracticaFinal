@@ -80,28 +80,15 @@
                     ctx.lineTo(y_axis["xf"], y_axis["yf"]);
                     ctx.stroke();
                     ctx.closePath();
-              
-                if (varX2 < 0); {
-                    for (x = -windowWidth; x <= windowWidth; x = x + 0.01) {
-                        var y = Math.pow(x, 2);
+                }
+                var EkisAlCuadrado = document.getElementsByName("VarX2")
+                    for (x = -windowWidth; x <= windowWidth; x = x + 0.01 ) {// El 0.01 es cada cuando pintamos un punto. Si quieres mas puntos, el valor ha de ser mas pequeño, pero se relentiza en cargar la pag.
+                        var y = Math.pow(EkisAlCuadrado*x, 2); //Con esto sacamos la anchura de la paràbola, y segun el signo del coeficiente de "x^2" sabremos el la direccion de la parabola. 
                         drawfx(x, y);
                     }
-                }
-                ifelse (varx2 < 0); {
-                    for (x = -windowWidth; x <= windowWidth; x = x + 0.01) {
-                        var y = Math.pow(x, 2);
-                        drawfx(x, y);
-                    }
-                }
-                ifelse (varx2 == 0); {
-                    for (x = -windowWidth; x <= windowWidth; x = x + 0.01) {
-                        var y = Math.pow(x, 1);
-                        drawfx(x, y);
-                    }
-                }
-
 
                 function drawfx(x, y) {
+
 
                     x = x * scale;
                     y = y * scale;
