@@ -16,16 +16,8 @@
 
     <main>
         <form action="">
-            <input type="number" name="VarX2"> X²
-            <select id=select1>
-                <option value="+"> + </option>
-                <option value="-"> - </option>
-            </select>
-            <input type="number" name="VarX"> X
-            <select id=select2>
-                <option value="+"> + </option>
-                <option value="-"> - </option>
-            </select>
+            <input type="number" name="VarX2"> X² +
+            <input type="number" name="VarX"> X +
             <input type="number" name="Indep">
 
             <input type="submit" value="Submit">
@@ -82,9 +74,10 @@
                     ctx.closePath();
                 }
                 var EkisAlCuadrado = document.getElementsByName("VarX2")
+                var Ekis = document.getElementsByName("VarX")
+                var Indep = document.getElementsByName("Indep")
                     for (x = -windowWidth; x <= windowWidth; x = x + 0.01 ) {// El 0.01 es cada cuando pintamos un punto. Si quieres mas puntos, el valor ha de ser mas pequeño, pero se relentiza en cargar la pag.
-                        var y = Math.pow(EkisAlCuadrado*x, 2); //Con esto sacamos la anchura de la paràbola, y segun el signo del coeficiente de "x^2" sabremos el la direccion de la parabola. 
-                        drawfx(x, y);
+                        var y = EkisAlCuadrado * Math.pow(x, 2) + Ekis * x + Indep ;
                     }
 
                 function drawfx(x, y) {
